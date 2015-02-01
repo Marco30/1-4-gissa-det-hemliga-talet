@@ -67,7 +67,35 @@ height: 621px;
 }
 
 
-#StartTempLabel
+#TitleLabel
+{
+margin: -52px 54px 40px 206px;
+color: #FFF;
+font-size: 32px;
+line-height: 194px;
+font-family: Verdana;
+}
+
+
+#Textruta
+{
+margin: -72px 77px 43px 148px;
+color: #FFF;
+font-size: 32px;
+line-height: 62px;
+font-family: Verdana;
+}
+
+#Gissningar
+{
+margin: -28px 66px 42px 202px;
+color: #FFF;
+font-size: 32px;
+line-height: 62px;
+font-family: Verdana;
+}
+
+#resultat
 {
 margin: 8px 66px 42px 15px;
 color: #FFF;
@@ -76,36 +104,18 @@ line-height: 62px;
 font-family: Verdana;
 }
 
-#EndTempLabel
+#GuessTextBox
 {
-margin: 8px 66px 42px 15px;
-color: #FFF;
-font-size: 32px;
-line-height: 62px;
-font-family: Verdana;
-}
-
-#TempIntervalLabel
-{
-margin: 8px 66px 42px 15px;
-color: #FFF;
-font-size: 32px;
-line-height: 62px;
-font-family: Verdana;
-}
-
-#StartTempBox
-{
-    margin: 6px 3px 0px 20px;
+    margin: 6px 3px 0px -11px;
 font-family: Verdana;
 font-size: 19px;
 }
 
-#EndTempBox
+#GuessLabel
 {
-    margin: 6px 3px 0px 20px;
+ margin: 8px 3px 0px 0px;
 font-family: Verdana;
-font-size: 19px;
+font-size: 24px;
 }
 
 #TempIntervalBox
@@ -116,20 +126,27 @@ font-size: 19px;
 }
 
 
-#konvert
+#ShowGuessLabel
 {
-    margin: 14px 3px 0px 15px;
+margin: 21px 3px 0px -43px;
 font-family: Verdana;
-font-size: 21px;
+font-size: 25px;
 color: #FFF;
 }
 
-#tabellen
+#ShowResultLabel
 {
-margin: 17px 3px 0px 87px;
+margin: 31px 3px 0px 117px;
 font-family: Verdana;
+font-size: 24px;
 color: #FFF;
+}
+
+#NewSecretNoButton
+{
+margin: -37px 3px 0px 148px;
 font-size: 20px;
+font-family: Verdana;
 }
 
 #RequiredFieldValidator1
@@ -149,7 +166,7 @@ color: #FFF;
 }
 
 
-#ValidationSummary1
+#Felmeddelanden
 {
 margin: 12px 0px 0px 86px;
 font-size: 20px;
@@ -159,6 +176,13 @@ color: #FFF;
 }
 
 #SendButton
+{
+  margin: 0px 6px 2px 0px;
+font-size: 20px;
+font-family: Verdana;
+}
+
+#NewSecretNoButton
 {
    margin: 14px 3px 0px 88px;
 font-size: 20px;
