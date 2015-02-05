@@ -73,7 +73,7 @@
 			<!-- Knapp som ska generera nytt hemligt nummer-->
 			<asp:PlaceHolder ID="PlaceHolder3" runat="server" Visible="false">
 				<p>
-					<asp:Button ID="NewSecretNoButton" runat="server" Text="Slumpa nytt hemligt tal" OnClick="NewSecretNoButton_Click" />
+					<asp:Button ID="NewSecretNoButton" runat="server" Text="Slumpa nytt hemligt tal" OnClick="NewSecretNoButton_Click" CausesValidation="False" />
 				</p>
 			</asp:PlaceHolder>
 

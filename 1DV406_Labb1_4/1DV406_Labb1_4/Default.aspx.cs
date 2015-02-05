@@ -55,7 +55,7 @@ namespace _1DV406_Labb1_4//Marco villegas
 				}
                 else if (answer == Outcome.Correct)//Om siffran man gissat på är rätt så körs den här if satsen 
 				{
-                    ShowResultLabel.Text = String.Format("<img src='Images/check1.png' /> Grattis! Du klarade det på {0} försök", SecretNumber.Count);// visar bild och text
+                    ShowResultLabel.Text = String.Format(" Grattis! Du klarade det på {0} försök", SecretNumber.Count);// visar bild och text
                     GuessTextBox.Enabled = false;// tar bort GuessTextBox från websidan
                     SendButton.Enabled = false;// tar bort SendButton från websidan
                     PlaceHolder2.Visible = true;// Visat placeholder2 på websidan
@@ -63,11 +63,12 @@ namespace _1DV406_Labb1_4//Marco villegas
 				}
                 else if (answer == Outcome.PreviousGuess)// Om man redan gissat på siffran man mattat in så körs den här if satsen  
 				{
-                    ShowGuessLabel.Text += String.Format("<img src='Images/alert16.png' /> redan gissat på talet"); // visar bild och meddelande 
+                    ShowGuessLabel.Text += String.Format(" Redan gissat på talet"); // visar bild och meddelande 
 				}
+
                 else if (answer == Outcome.NoMoreGuesses)// Om du redan gissat 7 gånger körs den här if satsen  
 				{
-                    ShowResultLabel.Text = String.Format(" <img src='Images/close16.png' />inga gissningar kvar, hemliga talet var {0}", SecretNumber.Number);// visar bild och meddelande 
+                    ShowResultLabel.Text = String.Format("<img src='Images/close16.png' />inga gissningar kvar, hemliga talet var {0}", SecretNumber.Number);// visar bild och meddelande 
                     GuessTextBox.Enabled = false;// tar bort GuessTextBox från websidan
                     SendButton.Enabled = false;// tar bort SendButton från websidan
                     PlaceHolder2.Visible = true;// Visat placeholder2 på websidan
@@ -78,8 +79,7 @@ namespace _1DV406_Labb1_4//Marco villegas
 
 		protected void NewSecretNoButton_Click(object sender, EventArgs e)
 		{
-            Session.Clear();// Rensar sessionen
-            Response.Redirect("Default.aspx");//Startat den igen   
+            SecretNumber.Initialize();// Rensar sessionen  
 		}
 
         
